@@ -1,1 +1,0 @@
-gcc -Wall -g server.c -o server -lpthread `pkg-config gtk+-2.0 --cflags --libs`

@@ -427,19 +427,19 @@ int main(int argc, char *argv[])
     toolbar = gtk_toolbar_new();
     gtk_toolbar_set_style(GTK_TOOLBAR(toolbar), GTK_TOOLBAR_ICONS);
 
-    startBtn = gtk_tool_button_new(gtk_image_new_from_file("start.png"), NULL);
+    startBtn = gtk_tool_button_new(gtk_image_new_from_file("icons/start.png"), NULL);
     gtk_toolbar_insert(GTK_TOOLBAR(toolbar), startBtn, -1);
-    stopBtn = gtk_tool_button_new(gtk_image_new_from_file("stop.png"), NULL);
+    stopBtn = gtk_tool_button_new(gtk_image_new_from_file("icons/stop.png"), NULL);
     gtk_toolbar_insert(GTK_TOOLBAR(toolbar), stopBtn, -1);
     toolbarSeparator1 = gtk_separator_tool_item_new ();
     gtk_toolbar_insert (GTK_TOOLBAR (toolbar), toolbarSeparator1, -1);
-    settingBtn = gtk_tool_button_new(gtk_image_new_from_file("setting.png"), NULL);
+    settingBtn = gtk_tool_button_new(gtk_image_new_from_file("icons/setting.png"), NULL);
     gtk_toolbar_insert(GTK_TOOLBAR(toolbar), settingBtn, -1);
-    aboutBtn = gtk_tool_button_new(gtk_image_new_from_file("about.png"), NULL);
+    aboutBtn = gtk_tool_button_new(gtk_image_new_from_file("icons/about.png"), NULL);
     gtk_toolbar_insert(GTK_TOOLBAR(toolbar), aboutBtn, -1);
     toolbarSeparator2 = gtk_separator_tool_item_new ();
     gtk_toolbar_insert (GTK_TOOLBAR (toolbar), toolbarSeparator2, -1);
-	closeBtn = gtk_tool_button_new(gtk_image_new_from_file("close.png"), NULL);
+	closeBtn = gtk_tool_button_new(gtk_image_new_from_file("icons/close.png"), NULL);
 	gtk_toolbar_insert(GTK_TOOLBAR(toolbar), closeBtn, -1);
 
     gtk_box_pack_start(GTK_BOX(vboxInWindow), toolbar, FALSE, TRUE, 5);
